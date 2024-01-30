@@ -5,35 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Udfyld</title>
+      <style>
+                button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+  </style>
+
 </head>
 <body>
-
+<button class="button" onclick="window.location.href='index.html'" style="
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: #00c200;
+">Gå til forsiden</button>
 <h1 style="text-align: center;">Indtast</h1>
 
 <form class="form" action="Tilføj.php" method="post">
 
 <div class="formitem">
-    <label for="navn">Navn</label>
+    <label for="navn">Navn*</label>
     <input placeholder="Indtast navn" class="input" name="navn" type="text" required>
 </div>
 
 <div class="formitem">
-    <label for="email">Email</label>
+    <label for="email">Email*</label>
     <input placeholder="Indtast email" class="input" name="email" type="email" required>
 </div>
 
 <div class="formitem">
-    <label for="telefon">Telefonnummer</label>
+    <label for="telefon">Telefonnummer*</label>
     <input placeholder="Indtast Telefonnummer" class="input" name="telefon" type="tel" required>
 </div>
 
 <div class="formitem">
     <label for="adresse">Adresse</label>
-    <input placeholder="Indtast Adresse" class="input" name="adresse" type="text" required>
+    <input placeholder="Indtast Adresse" class="input" name="adresse" type="text">
 </div>
 
 <div class="formitem">
-    <label for="year">Kontingentår</label>
+    <label for="year">Kontingentår*</label>
     <input placeholder="Indtast Kontingentår" class="input" name="year" type="number" required>
 </div>
 
