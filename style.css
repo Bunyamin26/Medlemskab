@@ -20,21 +20,20 @@ body{
 }
 
 .input {
-    background-color: #212121;
+    background-color: #e2e2e2;
     padding: 10px;
-    border: 2px solid white;
     border-radius: 5px;
 height: 4vh;
 width: 25vw;
     margin-top: 10px;
-
 margin-bottom: 10px;
-color: white;
+color: rgb(0, 0, 0);
+border: none;
 }
   
   .input:focus {
-    color: rgb(255, 255, 255);
-    background-color: #212121;
+    outline: none;
+    color: black;
   }
 
 .buttoncontainer{

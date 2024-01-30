@@ -3,47 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Udfyld</title>
+    <title>Document</title>
 </head>
+
+<style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+a{
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 30%;
+    border: 2px solid black;
+}
+
+</style>
+
 <body>
 
-<h1 style="text-align: center;">Indtast</h1>
+<div style=" height: 50vh; display: flex;
+flex-direction: column; align-items: center; justify-content: space-between; padding: 20px;">
 
-<form class="form" action="Tilføj.php" method="post">
+<a  href="udfyld.html">
+Udfyld
+</a>
 
-<div class="formitem">
-    <label for="">Navn</label>
-    <input placeholder="Indtast navn" class="input" type="text">
-</div>
-
-<div class="formitem">
-    <label for="">Email</label>
-    <input class="input" type="text">
-</div>
-
-<div class="formitem">
-    <label for="">Telefonnummer</label>
-    <input class="input" type="text">
-</div>
-
-<div class="formitem">
-    <label for="">Adresse</label>
-    <input class="input" type="text">
-</div>
-
-<div class="formitem">
-    <label for="">Kontigentår</label>
-    <input placeholder="Indtast navn" class="input" type="number">
-</div>
-
-<div class="buttoncontainer">
-    <button type="submit" class="formbutton">Indsend</button>
+<a href="list.php">
+Se alle
+</a>
 
 </div>
-
-</form>
-
 
 
 </body>
