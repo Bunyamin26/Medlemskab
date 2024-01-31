@@ -1,55 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hjem</title>
 </head>
 
 <style>
-    
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-body{
+  body {
     font-family: "Montserrat", sans-serif;
-  background-color: aliceblue;
-}
+    margin: 0;
+    padding: 0;
+  }
 
-a{
-    padding: 20px;
+  .startbuttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 50vh;
+    width: 60vw;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+    font-size: 1.6rem;
+    gap: 20px;
+  }
+
+  /* Media query for screens with a maximum width of 600px (adjust as needed) */
+  @media (max-width: 600px) {
+    .startbuttons {
+      grid-template-columns: 1fr;
+      /* Display buttons in a single column for smaller screens */
+      width: 80vw;
+      /* Adjust the width to fit smaller screens */
+      font-size: 0.8rem;
+      /* Increase font size for better readability on smaller screens */
+    }
+  }
+
+  .buttonitem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  a {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-decoration: none;
-    color: inherit;
-    background-color: rgb(255, 255, 255);
-    border-radius: 20px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 30%;
-    border: none;
+    color: unset;
+    border-radius: 40px;
+    font-weight: 500;
     transition: 0.2s ease-in-out;
-}
-  
-  a:hover{
-    opacity:0.7;
+  }
+
+  .one {
+    background-color: rgb(0, 217, 0);
+    color: white;
+  }
+
+  .two {
+    background-color: rgb(0, 162, 255);
+    color: white;
+  }
+
+  .three {
+    background-color: rgb(153, 0, 255);
+    color: white;
+  }
+
+  .one:hover,
+  .two:hover,
+  .three:hover {
+    opacity: 0.7;
   }
 </style>
 
 <body>
 
-<div style="height: 100vh;display: grid;flex-direction: column;align-items: center;padding: 20px;justify-items: center;align-content: space-evenly;">
+  <div class="startbuttons">
 
-<a style="
-    background-color: black;
-    color: white;
-"  href="udfyld.html">
-Udfyld
-</a>
+    <div class="buttonitem">
+      <h1>Tryk her for at tilføje</h1>
+      <a class="one" href="udfyld.html">
+        Tilføj
+      </a>
+    </div>
 
-<a href="list.php">
-Se alle
-</a>
 
-</div>
+    <div class="buttonitem">
+      <h1>Tryk her for at se</h1>
 
+      <a class="two" href="list.php">
+        Se alle
+      </a>
+    </div>
+
+
+    <div class="buttonitem">
+      <h1>Tryk her for brugere</h1>
+
+      <a class="three" href="user.php">
+        Se brugere
+      </a>
+    </div>
+
+  </div>
 
 </body>
+
 </html>
